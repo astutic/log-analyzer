@@ -176,7 +176,7 @@ const LogAnalyzer = () => {
     setLogData(parsedData);
     setFilteredData(parsedData);
     if (parsedData.length > 0) {
-      setColumns(Object.keys(parsedData[0]));
+      setColumns(["timestamp", "level", "message", "user", "request_id", "method", "path", "status", "duration", "api", "size", "human_size", "params"]);
     }
   };
 
